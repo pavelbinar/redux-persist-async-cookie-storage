@@ -44,7 +44,7 @@ var _cookiesJs2 = _interopRequireDefault(_cookiesJs);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var genericSetImmediate = typeof _setImmediate3.default === 'undefined' ? global.setImmediate : _setImmediate3.default;
-var nextTick = process && process.nextTick ? process.nextTick : genericSetImmediate;
+var nextTick = genericSetImmediate;
 
 var CookieStorage = exports.CookieStorage = function () {
   function CookieStorage() {
